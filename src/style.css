@@ -35,7 +35,8 @@ body {
   border-radius: 4px;
   border: 1px solid #ccc;
   font-size: 16px;
-  width: 100%;
+  width: 100%; /* Ensures the input is the same width as the container */
+  box-sizing: border-box;
 }
 
 .btn {
@@ -49,6 +50,7 @@ body {
   margin-top: 12px;
   width: 100%; /* Makes the Add button the same width as the input field */
   text-align: center;
+  box-sizing: border-box;
 }
 
 .btn-danger {
@@ -120,14 +122,16 @@ body {
 }
 
 .filter-btn {
-  background-color: #007bff; /* Blue color */
+  background-color: #007bff;
   color: white;
   border: none;
   padding: 10px 16px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
-  margin: 0 10px;
+  flex: 1;
+  margin: 0 5px; /* Adjust margin to maintain good gaps */
+  box-sizing: border-box;
 }
 
 .edit-input {
